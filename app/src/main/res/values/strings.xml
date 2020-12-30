@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Squaremage</string>
+    <string name="filter1">Grayscale</string>
+    <string name="filter2">Toonfilter</string>
+    <string name="load_image">Load Image</string>
+    <string name="_2x2">2x2</string>
+    <string name="_3x3">3x3</string>
+</resources>

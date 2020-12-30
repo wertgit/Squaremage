@@ -1,0 +1,3 @@
+include ':squaremagelib'
+include ':app'
+rootProject.name = "Squaremage"

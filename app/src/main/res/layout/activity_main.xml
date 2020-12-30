@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.bakkac.squaremagelib.SquareMageView
+        android:id="@+id/customview"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonFilter1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/filter1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/customview" />
+
+    <Button
+        android:id="@+id/buttonFilter2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/filter2"
+        app:layout_constraintStart_toStartOf="@+id/buttonFilter1"
+        app:layout_constraintTop_toBottomOf="@+id/buttonFilter1" />
+
+    <Button
+        android:id="@+id/button_load_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/load_image"
+        app:layout_constraintEnd_toStartOf="@+id/button2by2"
+        app:layout_constraintStart_toEndOf="@+id/buttonFilter1"
+        app:layout_constraintTop_toBottomOf="@+id/customview" />
+
+    <Button
+        android:id="@+id/button2by2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/_2x2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/customview" />
+
+    <Button
+        android:id="@+id/button3by3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/_3x3"
+        app:layout_constraintEnd_toEndOf="@+id/button2by2"
+        app:layout_constraintTop_toBottomOf="@+id/button2by2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
